@@ -1,0 +1,22 @@
+name: flutter_iam
+description: Reusable IAM (OIDC with PKCE) for Flutter apps — Okta/Azure AD adapters, secure token storage, Dio interceptor, and optional widgets.
+version: 0.1.0
+publish_to: "none"
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dio: ^5.6.0
+  flutter_secure_storage: ^9.2.2
+  uni_links: ^0.5.1
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
