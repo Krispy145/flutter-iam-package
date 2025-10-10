@@ -124,14 +124,14 @@ flutter test --coverage
 
 ## 🗓 Roadmap
 
-| Milestone                    | Target Date | Status     |
-| ---------------------------- | ----------- | ---------- |
-| Scaffold package             | 13/10/2025  | ✅ Done    |
-| Core authentication flows    | 20/10/2025  | ⏳ Pending |
-| Okta/Azure AD integration    | 26/10/2025  | ⏳ Planned |
-| Dio interceptor + route guards | 31/10/2025 | ⏳ Planned |
-| Token rotation + multi-tenant | 05/11/2025  | ⏳ Planned |
-| Documentation + v1.0.0       | 10/11/2025  | ⏳ Planned |
+| Milestone                      | Category               | Target Date | Status     |
+| ------------------------------ | ---------------------- | ----------- | ---------- |
+| Scaffold package               | Flutter App & Packages | 13/10/2025  | ✅ Done    |
+| Core authentication flows      | Flutter App & Packages | 20/10/2025  | ⏳ Pending |
+| Okta/Azure AD integration      | Flutter App & Packages | 26/10/2025  | ⏳ Planned |
+| Dio interceptor + route guards | Flutter App & Packages | 31/10/2025  | ⏳ Planned |
+| Token rotation + multi-tenant  | Flutter App & Packages | 05/11/2025  | ⏳ Planned |
+| Documentation + v1.0.0         | Flutter App & Packages | 10/11/2025  | ⏳ Planned |
 
 ---
 
