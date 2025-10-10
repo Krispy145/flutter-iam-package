@@ -1,6 +1,6 @@
 # flutter_iam
 
-Reusable IAM for Flutter apps implementing OIDC (PKCE) with **Okta** and **Azure AD** adapters, secure token storage, a Dio auth interceptor, and optional UI widgets.
+Flutter OIDC/OAuth2 package: login, token refresh, Dio interceptors.
 
 **Status:** scaffolded (initial package layout)  
 **Updated:** 06/10/2025
