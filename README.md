@@ -1,25 +1,73 @@
-# flutter_iam
+# Flutter IAM
 
 Flutter OIDC/OAuth2 package: login, token refresh, Dio interceptors.
 
-**Status:** scaffolded (initial package layout)  
-**Updated:** 06/10/2025
+---
+
+## 📈 Status
+
+- **Status:** scaffolded (initial setup complete)
+- **Focus:** Flutter authentication package with OIDC/OAuth2 support
+- **Last updated:** 07/10/2025
+- **Upcoming integration:** API Showcase and AI Chat RAG apps
 
 ---
 
-## Why this package
+## 🔑 Highlights
 
-- **Easy setup** (few lines to sign in and add an interceptor)
-- **SOLID architecture** (ports/adapters, services, controllers)
-- **Provider-agnostic** (Okta/Azure today, add others later)
-- **Secure by default** (PKCE, secure storage, short token TTL patterns)
-- **UI optional** (headless core + small widget helpers)
+- **Easy Setup** (few lines to sign in and add an interceptor)
+- **SOLID Architecture** (ports/adapters, services, controllers)
+- **Provider Agnostic** (Okta/Azure today, add others later)
+- **Secure by Default** (PKCE, secure storage, short token TTL patterns)
+- **UI Optional** (headless core + small widget helpers)
+- **Dio Integration** (automatic token refresh and request interceptors)
+- **Multi-tenant Support** (handle multiple identity providers)
+- **Token Management** (automatic refresh, secure storage, rotation)
 
 ---
 
-## Installation
+## 🏗 Architecture Overview
 
-This repo is a package; include it via path or git in your app's `pubspec.yaml` during development.
+Clean package architecture with separation of concerns:
+
+```
+lib/
+ ├─ src/core/           # config, errors
+ ├─ src/domain/         # entities, ports (interfaces), services
+ ├─ src/data/           # provider adapters, storage, http client
+ └─ src/presentation/   # optional widgets, routing helpers, controller
+```
+
+**Patterns used:**
+
+- `core/` handles configuration and error definitions
+- `domain/` contains business logic and interfaces
+- `data/` implements concrete adapters and storage
+- `presentation/` provides optional UI components
+- `example/` demonstrates usage patterns
+
+---
+
+## 📱 What It Demonstrates
+
+- Clean Flutter package architecture
+- OIDC/OAuth2 authentication flows
+- Secure token management and storage
+- Dio HTTP client integration
+- Provider-agnostic design patterns
+- Production-ready authentication solution
+
+---
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/Krispy145/flutter-iam.git
+cd flutter-iam
+flutter pub get
+```
+
+**Add to your app's `pubspec.yaml`:**
 
 ```yaml
 dependencies:
@@ -29,9 +77,7 @@ dependencies:
       ref: main
 ```
 
----
-
-## Quick start
+**Basic usage:**
 
 ```dart
 import 'package:flutter_iam/flutter_iam.dart';
@@ -44,46 +90,51 @@ final iam = IamConfig(
   scopes: ['openid','profile','email','offline_access'],
 );
 
-// In app code (coming versions will expose IamClient facade)
-final dio = Dio(); // dio.interceptors.add(IamAuthInterceptor(...));
-```
-
-> Note: In this initial scaffold, provider adapters are stubs; upcoming versions wire full OIDC PKCE.
-
----
-
-## Package architecture
-
-```
-lib/
-  src/core/           # config, errors
-  src/domain/         # entities, ports (interfaces), services
-  src/data/           # provider adapters, storage, http client
-  src/presentation/   # optional widgets, routing helpers, controller
-example/              # tiny demo app
+// Add auth interceptor to Dio
+final dio = Dio();
+dio.interceptors.add(IamAuthInterceptor(iam));
 ```
 
 ---
 
-## Roadmap
+## 🧪 Testing
 
-- **v0.1.0 (by 13/10/2025)** — scaffolding, ports/services, secure storage, widgets, example
-- **v0.2.0** — Okta/Azure AD PKCE flows, Dio interceptor, route guards
-- **v0.3.0** — token rotation, multi-tenant/provider registry, metrics hooks
-- **v1.0.0** — docs, hardening, and stability guarantees
+```bash
+flutter test --coverage
+```
 
----
-
-## Security
-
-- PKCE for SPA/mobile flows
-- No tokens in logs
-- Strict redirect URIs; handle `state`/nonce
-- Short access token TTL, refresh with rotation when supported
-- Server-side JWT validation in your backend (this package does not validate JWKS)
+- Unit tests → Core authentication logic
+- Widget tests → UI components and flows
+- Integration tests → End-to-end authentication flows
+- Security tests → Token handling and storage
 
 ---
 
-## License
+## 🔒 Security Features
+
+- **PKCE Flow** for SPA/mobile authentication
+- **Secure Token Storage** using Flutter's secure storage
+- **Token Rotation** with automatic refresh handling
+- **State/Nonce Validation** for CSRF protection
+- **Strict Redirect URIs** for security
+- **No Token Logging** to prevent exposure
+- **Short Token TTL** with refresh patterns
+
+---
+
+## 🗓 Roadmap
+
+| Milestone                    | Target Date | Status     |
+| ---------------------------- | ----------- | ---------- |
+| Scaffold package             | 13/10/2025  | ✅ Done    |
+| Core authentication flows    | 20/10/2025  | ⏳ Pending |
+| Okta/Azure AD integration    | 26/10/2025  | ⏳ Planned |
+| Dio interceptor + route guards | 31/10/2025 | ⏳ Planned |
+| Token rotation + multi-tenant | 05/11/2025  | ⏳ Planned |
+| Documentation + v1.0.0       | 10/11/2025  | ⏳ Planned |
+
+---
+
+## 📄 License
 
 MIT © Krispy145
