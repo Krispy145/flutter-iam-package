@@ -6,10 +6,10 @@ Flutter OIDC/OAuth2 package: login, token refresh, Dio interceptors.
 
 ## 📈 Status
 
-- **Status:** planned (Planned)
+- **Status:** scaffolded (Scaffolded)
 - **Focus:** Flutter OIDC/OAuth2 package: login, token refresh, Dio interceptors.
 - **Last updated:** 13/10/2025
-- **Target completion:** 10/11/2025
+- **Target completion:** 26/10/2025
 
 ---
 
@@ -103,7 +103,7 @@ flutter test --coverage
 
 | Milestone                    | Category              | Target Date | Status     |
 | ---------------------------- | --------------------- | ----------- | ---------- |
-| Scaffold package | Flutter App & Packages | 13/10/2025 | ✅ Done |
+| Scaffold package | Flutter App & Packages | 26/10/2025 | ✅ Done |
 | Core authentication flows | Flutter App & Packages | 20/10/2025 | ⏳ In Progress |
 | Okta/Azure AD integration | Flutter App & Packages | 26/10/2025 | ⏳ In Progress |
 | Dio interceptor + route guards | Flutter App & Packages | 31/10/2025 | ⏳ In Progress |
