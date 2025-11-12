@@ -8,7 +8,7 @@ Flutter OIDC/OAuth2 package: login, token refresh, Dio interceptors.
 
 - **Status:** scaffolded (Scaffolded)
 - **Focus:** Flutter OIDC/OAuth2 package: login, token refresh, Dio interceptors.
-- **Last updated:** 11/11/2025
+- **Last updated:** 12/11/2025
 - **Target completion:** 18/11/2025
 
 ---
