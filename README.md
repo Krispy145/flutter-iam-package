@@ -1,14 +1,14 @@
 # Flutter Iam Package
 
-Flutter OIDC/OAuth2 package: login, token refresh, Dio interceptors.
+Flutter IAM: password login against Secure AI API, session restore/refresh, Dio interceptors.
 
 ---
 
 ## 📈 Status
 
-- **Status:** scaffolded (Scaffolded)
-- **Focus:** Flutter OIDC/OAuth2 package: login, token refresh, Dio interceptors.
-- **Last updated:** 21/08/2026
+- **Status:** active (Active)
+- **Focus:** Flutter IAM: password login against Secure AI API, session restore/refresh, Dio interceptors.
+- **Last updated:** 23/08/2026
 - **Target completion:** 22/02/2027
 
 ---
@@ -104,9 +104,9 @@ flutter test --coverage
 | Milestone                    | Category              | Target Date | Status     |
 | ---------------------------- | --------------------- | ----------- | ---------- |
 | Scaffold package | Flutter App & Packages | 26/10/2025 | ✅ Done |
-| Core authentication flows | Flutter App & Packages | 07/12/2026 | ⏳ Planned |
+| Core authentication flows | Flutter App & Packages | 07/12/2026 | ✅ Done |
 | Okta/Azure AD integration | Flutter App & Packages | 21/12/2026 | ⏳ Planned |
-| Dio interceptor + route guards | Flutter App & Packages | 18/01/2027 | ⏳ Planned |
+| Dio interceptor + route guards | Flutter App & Packages | 18/01/2027 | ✅ Done |
 | Token rotation + multi-tenant | Flutter App & Packages | 08/02/2027 | ⏳ Planned |
 | Documentation + v1.0.0 | Flutter App & Packages | 22/02/2027 | ⏳ Planned |
 
