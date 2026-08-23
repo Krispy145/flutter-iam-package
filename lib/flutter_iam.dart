@@ -1,13 +1,20 @@
-// Public exports
 export 'src/core/iam_config.dart';
 export 'src/core/errors.dart';
+export 'src/domain/entities/session.dart';
+export 'src/domain/ports/auth_provider.dart';
+export 'src/domain/ports/http_client.dart';
+export 'src/domain/ports/token_storage.dart';
 export 'src/domain/services/session_service.dart';
 export 'src/domain/services/token_service.dart';
+export 'src/data/http/auth_interceptor.dart';
 export 'src/data/http/dio_http_client.dart';
 export 'src/data/providers/okta_provider.dart';
 export 'src/data/providers/azure_ad_provider.dart';
+export 'src/data/providers/password_provider.dart';
 export 'src/data/storage/secure_storage.dart';
+export 'src/data/storage/memory_storage.dart';
 export 'src/presentation/controllers/auth_controller.dart';
 export 'src/presentation/widgets/sign_in_button.dart';
 export 'src/presentation/widgets/sign_out_button.dart';
 export 'src/presentation/routing/guards.dart';
+export 'src/flutter_iam_client.dart';

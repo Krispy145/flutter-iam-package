@@ -1,0 +1,19 @@
+name: flutter_iam_example
+description: Demo for flutter_iam password login against Secure AI API.
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_iam:
+    path: ../
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

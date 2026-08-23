@@ -20,12 +20,13 @@ class Session {
     String? idToken,
     String? refreshToken,
     Map<String, dynamic>? claims,
-  }) => Session(
-    isAuthenticated: isAuthenticated ?? this.isAuthenticated,
-    accessToken: accessToken ?? this.accessToken,
-    accessTokenExpiry: accessTokenExpiry ?? this.accessTokenExpiry,
-    idToken: idToken ?? this.idToken,
-    refreshToken: refreshToken ?? this.refreshToken,
-    claims: claims ?? this.claims,
-  );
+  }) =>
+      Session(
+        isAuthenticated: isAuthenticated ?? this.isAuthenticated,
+        accessToken: accessToken ?? this.accessToken,
+        accessTokenExpiry: accessTokenExpiry ?? this.accessTokenExpiry,
+        idToken: idToken ?? this.idToken,
+        refreshToken: refreshToken ?? this.refreshToken,
+        claims: claims ?? this.claims,
+      );
 }

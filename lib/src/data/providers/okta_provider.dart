@@ -7,18 +7,28 @@ import '../../domain/ports/auth_provider.dart';
 class OktaAuthProvider implements AuthProviderPort {
   @override
   Future<IamResult<Session>> startAuth(IamConfig config) async {
-    return const IamResult.err(UnsupportedProvider('Okta startAuth not implemented yet'));
+    return const IamResult.err(
+        UnsupportedProvider('Okta startAuth not implemented yet'));
   }
+
   @override
-  Future<IamResult<Session>> exchangeCode(IamConfig config, {required Uri redirect}) async {
-    return const IamResult.err(UnsupportedProvider('Okta exchangeCode not implemented yet'));
+  Future<IamResult<Session>> exchangeCode(IamConfig config,
+      {required Uri redirect}) async {
+    return const IamResult.err(
+        UnsupportedProvider('Okta exchangeCode not implemented yet'));
   }
+
   @override
-  Future<IamResult<Session>> refresh(IamConfig config, {required String refreshToken}) async {
-    return const IamResult.err(UnsupportedProvider('Okta refresh not implemented yet'));
+  Future<IamResult<Session>> refresh(IamConfig config,
+      {required String refreshToken}) async {
+    return const IamResult.err(
+        UnsupportedProvider('Okta refresh not implemented yet'));
   }
+
   @override
-  Future<IamResult<void>> revoke(IamConfig config, {String? accessToken, String? refreshToken}) async {
-    return const IamResult.err(UnsupportedProvider('Okta revoke not implemented yet'));
+  Future<IamResult<void>> revoke(IamConfig config,
+      {String? accessToken, String? refreshToken}) async {
+    return const IamResult.err(
+        UnsupportedProvider('Okta revoke not implemented yet'));
   }
 }

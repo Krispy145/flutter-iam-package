@@ -9,14 +9,16 @@ class SecureTokenStorage implements TokenStoragePort {
 
   @override
   Future<void> save(Session s) async {
-    await _storage.write(key: _k, value: jsonEncode({
-      'isAuthenticated': s.isAuthenticated,
-      'accessToken': s.accessToken,
-      'accessTokenExpiry': s.accessTokenExpiry?.toIso8601String(),
-      'idToken': s.idToken,
-      'refreshToken': s.refreshToken,
-      'claims': s.claims,
-    }));
+    await _storage.write(
+        key: _k,
+        value: jsonEncode({
+          'isAuthenticated': s.isAuthenticated,
+          'accessToken': s.accessToken,
+          'accessTokenExpiry': s.accessTokenExpiry?.toIso8601String(),
+          'idToken': s.idToken,
+          'refreshToken': s.refreshToken,
+          'claims': s.claims,
+        }));
   }
 
   @override
@@ -27,7 +29,9 @@ class SecureTokenStorage implements TokenStoragePort {
     return Session(
       isAuthenticated: j['isAuthenticated'] == true,
       accessToken: j['accessToken'],
-      accessTokenExpiry: j['accessTokenExpiry'] != null ? DateTime.parse(j['accessTokenExpiry']) : null,
+      accessTokenExpiry: j['accessTokenExpiry'] != null
+          ? DateTime.parse(j['accessTokenExpiry'])
+          : null,
       idToken: j['idToken'],
       refreshToken: j['refreshToken'],
       claims: (j['claims'] as Map?)?.cast<String, dynamic>(),
