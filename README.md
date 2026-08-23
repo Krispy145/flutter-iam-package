@@ -105,10 +105,10 @@ flutter test --coverage
 | ---------------------------- | --------------------- | ----------- | ---------- |
 | Scaffold package | Flutter App & Packages | 26/10/2025 | ✅ Done |
 | Core authentication flows | Flutter App & Packages | 07/12/2026 | ✅ Done |
-| Okta/Azure AD integration | Flutter App & Packages | 21/12/2026 | ⏳ Planned |
+| Okta/Azure AD integration | Flutter App & Packages | 16/11/2026 | ⏳ Planned |
 | Dio interceptor + route guards | Flutter App & Packages | 18/01/2027 | ✅ Done |
-| Token rotation + multi-tenant | Flutter App & Packages | 08/02/2027 | ⏳ Planned |
-| Documentation + v1.0.0 | Flutter App & Packages | 22/02/2027 | ⏳ Planned |
+| Token rotation + multi-tenant | Flutter App & Packages | 30/11/2026 | ⏳ Planned |
+| Documentation + v1.0.0 | Flutter App & Packages | 14/12/2026 | ⏳ Planned |
 
 
 ---
